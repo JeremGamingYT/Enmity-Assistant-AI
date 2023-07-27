@@ -104,9 +104,9 @@ if "messages" not in st.session_state:
 user_input = st.chat_input("Écrivez quelque chose..")
 
 if user_input:
-    st.session_state.messages.append({"content": f"{user_input}", "is_user": True})
+    st.session_state.messages.append({"content": f"User : {user_input}", "is_user": True})
     response = chatbot(user_input)
-    st.session_state.messages.append({"content": f"{response}", "is_user": False})
+    st.session_state.messages.append({"content": f"Bard : {response}", "is_user": False})
 
 # Affichez l'historique des messages
 for msg in st.session_state.messages:
