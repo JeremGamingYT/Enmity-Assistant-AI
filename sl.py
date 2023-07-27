@@ -8,9 +8,8 @@ import torch
 import openai
 import webbrowser
 import numpy as np
-import tkinter as tk
-from tkinter import ttk
-from ttkthemes import ThemedTk
+#import tkinter as tk
+#from tkinter import ttk
 from datetime import datetime
 from nltk import word_tokenize
 from nltk.corpus import stopwords
